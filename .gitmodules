@@ -1,0 +1,3 @@
+[submodule "medium-sdk-python"]
+	path = medium-sdk-python
+	url = https://github.com/Medium/medium-sdk-python
