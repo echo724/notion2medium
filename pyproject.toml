@@ -4,9 +4,20 @@ version = "0.1.0"
 description = ""
 authors = ["echo724 <eunchan1001@gmail.com>"]
 
+packages = [
+    { include = "notion2medium" },
+    { include = "medium_sdk_python" },
+]
+
+exclude = ["tests"]
+
+[tool.poetry.scripts]
+notion2medium = "notion2medium.console.application:main"
+
 [tool.poetry.dependencies]
 python = "^3.9"
 notion2md = "^2.4.0"
+cleo = "1.0.0a4"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
