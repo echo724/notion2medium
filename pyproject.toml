@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "notion2medium"
 version = "0.1.0"
-description = ""
+description = "Simple command that creates Medium post from a Notion page"
 authors = ["echo724 <eunchan1001@gmail.com>"]
 
 packages = [
