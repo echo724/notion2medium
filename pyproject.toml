@@ -6,6 +6,7 @@ authors = ["echo724 <eunchan1001@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+notion2md = "^2.4.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
