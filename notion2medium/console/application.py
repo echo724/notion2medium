@@ -1,13 +1,17 @@
-from email.mime import application
-from cleo.application import Application
-from notion2medium.console.commands.select import SelectCommand
+from cleo import Application as BaseApplication
 
-command = SelectCommand()
-application = Application()
-application.add(command)
+from notion2medium import __version__
+from notion2medium.console.commands.publish import PublishCommand
+
+class Application(BaseApplication):
+    def __init__(self) -> None:
+        super(Application,self).__init__(
+            "notion2medium",__version__
+        )
+        self.add(PublishCommand())
 
 def main() -> int:
-    return application.run()
+    return Application().run()
 
 if __name__ == '__main__':
     main()
