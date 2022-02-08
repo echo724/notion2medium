@@ -5,7 +5,7 @@ from cleo.helpers import option
 class PublishCommand(Command):
     name = "publish"
     description = "Publish a <c2>Notion</c2> page to publish to Medium."
-    help = """You can publish a Notion page from Notion Database that will be published to Medium.
+    help = """Publish a Notion page from Notion Database that will be published to Medium.
     """
     options = [
         option(
