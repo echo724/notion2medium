@@ -1,3 +1,5 @@
 *.ipynb
 poetry.lock
 __pycache__/
+
+dist/
