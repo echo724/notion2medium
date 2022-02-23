@@ -16,9 +16,10 @@ notion2medium = "notion2medium.console.application:main"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-notion2md = "^2.4.0"
-cleo = "^0.8.1"
-clikit = "^0.6.2"
+cleo = "1.0.0a4"
+notion-client = "^0.9.0"
+requests = "^2.27.1"
+notion2md = "^2.7.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
