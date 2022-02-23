@@ -3,6 +3,7 @@ name = "notion2medium"
 version = "1.0.0"
 description = "a Simple command that publishes Notion Page to Medium."
 authors = ["echo724 <eunchan1001@gmail.com>"]
+readme = "README.md"
 
 packages = [
     { include = "notion2medium" },
