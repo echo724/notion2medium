@@ -22,6 +22,36 @@ clikit = "^0.6.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
+isort = "^5.10.1"
+black = "^22.1.0"
+flake8 = "^4.0.1"
+pre-commit = "^2.17.0"
+
+[tool.isort]
+profile = "black"
+force_single_line = true
+atomic = true
+include_trailing_comma = true
+lines_after_imports = 2
+lines_between_types = 1
+use_parentheses = true
+src_paths = ["notion2medium", "tests"]
+filter_files = true
+known_first_party = "notion2medium"
+
+[tool.black]
+extend-exclude = 'medium_sdk_python/'
+line-length = 79
+
+[tool.semantic_release]
+version_variable = [
+    "notion2medium/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "poetry build"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
