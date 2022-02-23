@@ -42,32 +42,19 @@ $ notion2medium select -i <Notion Database id>
 
 - Publishes a Medium Post from **Notion Page**.
 
-- Retrieves Notion Page's content(children blocks) as markdown and Page's tags.
+- Retrieves Notion Page's **content**(children blocks) as markdown and Page's **tags**.
 
-- `select` commands require either `id` or `url` of the Notion Database or Page.
+- `publish` commands require either `id` or `url` of the Notion Database or Page.
 
 ```Bash
-$ notion2medium select -i <Notion Database id>
+$ notion2medium publish -i <Notion Page id>
 ```
-## To-do
-
-- [x] Download file object(image and files)
-- [x] Table blocks
-- [x] Synced Block
-- [ ] Page Exporter
-- [ ] Database Exporter
-- [ ] Child page
-- [ ] Column List and Column Blocks
-
-## Contribution
-
-Please read [Contribution Guide](CONTRIBUTION.md)
 
 ## Donation
 
-If you think **Notion2Md** is helpful to you, you can support me here:
+If you think **Notion2Medium** is helpful to you, you can support me here:
 
 <a href="https://www.buymeacoffee.com/echo724" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 54px;" height="54"></a>
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[Apache License 2.0](LICENSE)
